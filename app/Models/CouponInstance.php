@@ -20,6 +20,7 @@ class CouponInstance extends Model
     public function campaign(): belongsTo
     {
         return $this->belongsTo(CouponCampaign::class, 'campaign_id');
+        // needs more work
     }
 
     public function user()
